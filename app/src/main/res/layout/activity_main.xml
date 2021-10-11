@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <EditText
+        android:id="@+id/tahminEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tahmin et 🚀"
+        android:cursorVisible="false"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tahminText"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tahmin aralığı seçiniz"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tahminEditText"
+        />
+    <RadioGroup
+        android:id="@+id/sayiAralik"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:checkedButton="@id/sifirElli"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tahminText"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/sifirYirmibes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="0-25"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+        <RadioButton
+            android:id="@+id/sifirElli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="0-50"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+        <RadioButton
+            android:id="@+id/sifirYuz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="1-100"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/ipucu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İpucu almak ister misiniz"
+        android:textSize="25sp"
+        android:textColor="@color/teal_200"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sayiAralik"
+        />
+
+
+    <Button
+        android:id="@+id/sayiTut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sayı Tut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ipucu"
+        />
+
+    <Button
+        android:id="@+id/sonucGor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SONUÇ GÖR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sonucText"
+        />
+
+
+
+    <TextView
+        android:id="@+id/sonucText"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sayiTut"
+        android:text="Sonuç: 🚀"
+        />
+
+    <TextView
+        android:id="@+id/hak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hak: 5"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonucGor"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
