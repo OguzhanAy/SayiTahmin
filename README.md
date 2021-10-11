@@ -1,0 +1,2 @@
+# SayiTahmin
+Kotlin application
