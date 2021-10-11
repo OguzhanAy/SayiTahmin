@@ -4,5 +4,6 @@ Kotlin application
 
 
 
-https://user-images.githubusercontent.com/74328948/136718948-a8e24b9f-aa6f-4225-a56e-e6928d44f58b.mp4
 
+
+![SayıTahmin](https://user-images.githubusercontent.com/74328948/136825975-fd7548e7-3753-4f6c-a329-70daf384e2de.gif)
